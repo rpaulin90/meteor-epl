@@ -1,0 +1,30 @@
+{
+  "name": "meteor-epl",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.1.5",
+    "history": "^4.9.0",
+    "meteor-node-stubs": "^0.4.1",
+    "react": "^16.8.5",
+    "react-countdown-now": "^2.1.0",
+    "react-dom": "^16.8.5",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "react-toggle": "^4.0.2",
+    "semantic-ui-react": "^0.86.0",
+    "sillyname": "^0.1.0"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  }
+}
